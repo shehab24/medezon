@@ -1,0 +1,128 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.blank_div {
+  width: 100%;
+  height: 500px;
+  background: #f3f5f8;
+  margin-top: -347px;
+  z-index: -1;
+  position: relative;
+}
+.blog_main_box {
+  width: 100%;
+  height: 900px;
+  background-color: #f3f5f8;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    background-image: url('../images/blog_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .blog_main_title_box {
+    text-align: center;
+    width: 100%;
+
+    button {
+      border-radius: 5px;
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: c.$primary_color;
+      border: none;
+      outline: none;
+      width: 180px;
+      height: 36px;
+      margin-bottom: 25px;
+      background-color: rgba(73, 154, 250, 0.1);
+    }
+    h3 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 55px;
+      color: c.$secondary_color;
+    }
+  }
+  .blog_card_main_box {
+    width: 100%;
+    margin-top: 70px;
+
+    .blog_box_row {
+      padding: 0px 45px;
+    }
+
+    .blog_card_box {
+      background-color: c.$third_color;
+      padding: 20px;
+      border-radius: 7px;
+
+      img {
+        width: 100%;
+      }
+
+      .card_body {
+        padding: 30px;
+
+        .date_box {
+          font-family: f.$nunito_font;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          color: c.$primary_color;
+          margin-bottom: 15px;
+          i {
+            margin-right: 10px;
+          }
+        }
+        h3 {
+          font-family: f.$heebo_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 35px;
+          color: c.$secondary_color;
+        }
+
+        .author_box {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+
+          img {
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+          }
+
+          span {
+            font-family: f.$heebo_font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

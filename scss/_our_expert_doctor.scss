@@ -1,0 +1,121 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.our_expert_doctor_main_box {
+  width: 100%;
+  height: 800px;
+  padding: 50px 0px;
+  .our_expert_doctor_title_box {
+    width: 100%;
+    padding: 20px 0px;
+
+    button {
+      border-radius: 5px;
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: c.$primary_color;
+      border: none;
+      outline: none;
+      width: 236px;
+      height: 36px;
+      margin-bottom: 25px;
+      background-color: rgba(73, 154, 250, 0.1);
+    }
+    h3 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 55px;
+      color: c.$secondary_color;
+
+      span {
+        color: c.$primary_color;
+      }
+    }
+  }
+  .doctor_box {
+    width: 100%;
+    margin-top: 40px;
+
+    .doctor_info {
+      width: 100%;
+      padding: 20px;
+      background: #f4f7f7;
+      border: 1px solid rgba(0, 35, 75, 0.1);
+      border-radius: 7px;
+      text-align: center;
+
+      img {
+        width: 215px;
+        height: 215px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-family: f.$heebo_font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 55px;
+        color: c.$secondary_color;
+      }
+      span {
+        font-family: f.$nunito_font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        color: c.$primary_color;
+      }
+      .doctor_social {
+        width: 100%;
+        height: 0px;
+        margin-top: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s;
+
+        ul {
+          display: flex;
+
+          li {
+            margin-right: 7px;
+
+            a {
+              width: 40px;
+              height: 40px;
+              background-color: c.$third_color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              text-decoration: none;
+              transition: all 0.5s;
+
+              i {
+                color: c.$secondary_color;
+              }
+              &:hover {
+                background-color: c.$primary_color;
+
+                i {
+                  color: c.$third_color;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .doctor_social {
+          height: 50px;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.header {
+  width: 100%;
+
+  &__top_box {
+    width: 100%;
+    height: 40px;
+    background-color: c.$secondary_color;
+    text-align: center;
+    color: c.$third_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  &__middle_box {
+    width: 100%;
+    padding: 15px 0px;
+    .header__pnumber_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 50px;
+      }
+      .pnumber_info {
+        text-align: left;
+        padding-left: 15px;
+
+        h4 {
+          font-family: f.$heebo_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        p {
+          font-family: 'Nunito Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .header__email_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 50px;
+      }
+      .emailbox_info {
+        text-align: left;
+        padding-left: 15px;
+
+        h4 {
+          font-family: f.$heebo_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        p {
+          font-family: 'Nunito Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .header__clock_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 50px;
+      }
+      .clockbox_img {
+        text-align: left;
+        padding-left: 15px;
+
+        h4 {
+          font-family: f.$heebo_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+        }
+        p {
+          font-family: 'Nunito Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  &__bottom_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+
+    .header__bottom {
+      background-color: c.$primary_color;
+      z-index: 9999;
+      position: relative;
+    }
+
+    .header__nav_box {
+      width: 100%;
+      margin: 0;
+      padding: 20px 0px;
+      display: flex;
+      align-items: center;
+
+      ul {
+        margin: 0;
+        padding: 0px;
+        display: flex;
+
+        li {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          a {
+            font-family: f.$heebo_font;
+            text-decoration: none;
+            color: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            margin-left: 55px;
+          }
+        }
+      }
+    }
+  }
+  .mobile_header_menu_box {
+    display: none;
+  }
+  &__appoint_btn_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$secondary_color;
+    height: 100%;
+    border-radius: 40px;
+    transform: translateX(30px);
+
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}

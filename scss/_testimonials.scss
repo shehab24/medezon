@@ -1,0 +1,114 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.testimonials {
+  width: 1250px;
+  height: 693px;
+  margin: 0px auto;
+  background-image: url('../images/testimonials_icons.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: c.$secondary_color;
+  position: relative;
+  z-index: 2;
+
+  .testimonials_left_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px 20px 80px;
+    button {
+      width: 168px;
+      height: 36px;
+      border-radius: 5px;
+      background-color: rgba($color: #fff, $alpha: 0.1);
+      border: none;
+      outline: none;
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      color: c.$third_color;
+    }
+    h2 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 55px;
+      color: c.$third_color;
+      margin-top: 20px;
+
+      span {
+        color: c.$primary_color;
+      }
+    }
+
+    .testimonials_slider_box {
+      margin-top: 30px;
+      width: 480px;
+      height: 320px;
+
+      .test_slider_content {
+        width: 470px;
+        height: 317px;
+        background-color: c.$third_color;
+        border-radius: 7px;
+        padding: 40px;
+
+        p {
+          font-family: f.$nunito_font;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 35px;
+          color: c.$secondary_color;
+        }
+
+        .test_slider_img_box {
+          display: flex;
+          margin-top: 15px;
+          align-items: center;
+
+          img {
+            width: 45px;
+            height: 45px;
+            border-radius: 22px;
+          }
+          div {
+            margin-left: 15px;
+
+            h3 {
+              font-family: f.$heebo_font;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 22px;
+              color: c.$secondary_color;
+            }
+            span {
+              font-family: f.$nunito_font;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              color: c.$primary_color;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

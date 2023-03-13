@@ -1,0 +1,1298 @@
+@use './color' as c;
+@use './typhography' as f;
+
+@media screen and (max-width: 1400px) {
+  // for about
+  .about__us_main_box {
+    &::before {
+      content: '';
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      right: 0;
+      top: -25%;
+    }
+
+    &::after {
+      content: '';
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      display: none;
+    }
+
+    .about__content_info {
+      h2 {
+        z-index: 11;
+        position: relative;
+      }
+    }
+  }
+
+  .about__us_main_box .about__content_info {
+    width: 100%;
+    padding-left: 55px;
+  }
+
+  .testimonials {
+    width: 100%;
+
+    .testimonials_content {
+      padding-left: 20px;
+    }
+  }
+
+  .provide_service_main_box {
+    &::after {
+      bottom: -222px;
+      display: none;
+    }
+  }
+
+  .get_right_doctor_main {
+    .get_right_content {
+      width: 75%;
+    }
+  }
+
+  .footer_main {
+    .footer_link_box {
+      padding-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header__bottom_box {
+    .header__nav_box {
+      ul {
+        li {
+          a {
+            font-size: 16px;
+            margin-left: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  .about__us_main_box {
+    height: 710px;
+    .about__img_box {
+      .about__img_top {
+        img {
+          width: 65%;
+        }
+        &::before {
+          width: 200px;
+          height: 200px;
+        }
+        &::after {
+          content: '';
+          width: 90px;
+          height: 90px;
+          left: 50px;
+          top: 75px;
+        }
+      }
+
+      .about__img_bottom {
+        width: 100%;
+
+        img {
+          width: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+    .about__content_info {
+      h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      .about__subservice_box {
+        .about_subservice {
+          img {
+            width: 50px;
+            margin-bottom: 15px;
+          }
+          h3 {
+            margin-bottom: 5px;
+          }
+
+          span {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+      .about__learn_btn {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .readyToapp_all_box {
+    .readyToapp_content_box {
+      justify-content: flex-start;
+
+      img {
+        width: 100px;
+        margin-left: 45px;
+      }
+
+      h3 {
+        font-size: 35px;
+        line-height: 40px;
+        margin: 0px 30px;
+      }
+    }
+  }
+
+  .provide_service_main_box {
+    .service_info_box {
+      .service_box {
+        padding: 20px 15px;
+
+        h3 {
+          font-size: 25px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+  .our_expert_doctor_main_box {
+    height: 740px;
+    .doctor_box {
+      .doctor_info {
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .core_features {
+    height: 530px;
+    .core_features_left_content {
+      h2 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .testimonials {
+    height: 590px;
+    .testimonials_left_img {
+      img {
+        width: 85%;
+      }
+    }
+
+    .testimonials_content {
+      padding: 77px 20px 20px 7px;
+      h2 {
+        font-size: 35px;
+        line-height: 50px;
+      }
+
+      .testimonials_slider_box {
+        .test_slider_content {
+          height: 100%;
+          padding: 20px;
+
+          p {
+            font-size: 18px;
+            line-height: 30px;
+          }
+
+          .test_slider_img_box {
+            h3 {
+              font-size: 18px;
+            }
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blank_div {
+    height: 410px;
+  }
+  .blog_main_box {
+    height: 740px;
+    .blog_card_main_box {
+      .blog_box_row {
+        padding: 0px;
+      }
+      .blog_card_box {
+        .card_body {
+          padding: 15px;
+          h3 {
+            font-size: 19px;
+            line-height: 26px;
+          }
+          .date_box {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .get_right_doctor_main {
+    .get_right_content {
+      width: 80%;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+  .footer_main {
+    .footer_logo_box {
+      p {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+    .footer_link_box {
+      padding-left: 25px;
+
+      .footer_ul_b {
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .footer_contact_info {
+      .subscribe_box {
+        width: 100%;
+      }
+    }
+  }
+
+  .image_box_main_section {
+    .img_box_img {
+      .img_overlay {
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* Styles for screens up to 576 pixels wide */
+  .header {
+    .header__top_box {
+      height: 45px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .header__middle_box {
+      .header__logo_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .header__pnumber_box {
+        justify-content: center;
+
+        img {
+          width: 35px;
+        }
+        .pnumber_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          p {
+            line-height: 18px;
+            font-size: 14px;
+          }
+        }
+      }
+      .header__email_box {
+        justify-content: center;
+
+        img {
+          width: 35px;
+        }
+        .emailbox_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+      .header__clock_box {
+        display: none;
+      }
+    }
+    // display: none;
+    .header__bottom_box {
+      .header__bottom {
+        display: none;
+      }
+    }
+    .mobile_header_menu_box {
+      display: block;
+      width: 90%;
+      margin: 0px auto;
+      height: 50px;
+      background-color: c.$primary_color;
+      z-index: 9999;
+      position: relative;
+
+      .mobile_menu_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 25px;
+
+        .humberger_menu_box {
+          span {
+            color: c.$third_color;
+            font-size: 20px;
+          }
+        }
+        .mobile_header__appoint_btn_box {
+          button {
+            padding: 10px;
+            font-size: 14px;
+            font-family: f.$nunito_font;
+            border: none;
+            outline: none;
+            background-color: c.$secondary_color;
+            color: c.$third_color;
+            border-radius: 20px;
+          }
+        }
+      }
+      .mobile_menu_popup {
+        width: 70%;
+        height: 100vh;
+        background-color: c.$secondary_color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999999;
+        display: block;
+        transition: all 0.5s;
+        transform: translateX(-110%);
+        &.active {
+          transform: translateX(0%);
+        }
+
+        .close_btn {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: c.$secondary_color;
+          background-color: c.$third_color;
+          font-size: 20px;
+          border-radius: 20px;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+
+        .mobile_menu_ul {
+          margin-top: 100px;
+
+          ul {
+            list-style-type: none;
+            li {
+              line-height: 40px;
+
+              a {
+                text-decoration: none;
+                color: c.$third_color;
+                border: none;
+                transition: border-width 0.5s ease-in-out;
+                &:hover {
+                  border-bottom: 1px solid c.$third_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .doctor_schedule_main_box {
+    .schedule_table_box {
+      table {
+        width: 100% !important;
+        overflow-x: scroll;
+        display: block;
+
+        tbody {
+          .table_head {
+            th {
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+
+          tr {
+            th {
+              font-size: 14px;
+              line-height: 30px;
+            }
+            h4 {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banar__main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banar__content_info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 100px;
+        line-height: 120px;
+      }
+    }
+  }
+  .make__appoint_box {
+    height: 100%;
+    padding: 50px 10px;
+
+    .appoint_form {
+      .row {
+        div {
+          margin-bottom: 15px;
+        }
+      }
+      .second_row {
+        margin-top: 0px;
+      }
+    }
+  }
+  .about__us_main_box {
+    height: 100%;
+    .about__content_info {
+      padding: 50px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+    .about__img_box {
+      .about__img_bottom img {
+        width: 47%;
+      }
+    }
+  }
+  .provide_service_main_box {
+    height: 100%;
+    &::before {
+      z-index: -1;
+    }
+    .provide_title_box {
+      h3 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    .service_info_box {
+      .service_box {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .our_expert_doctor_main_box {
+    height: 100%;
+
+    .our_expert_doctor_title_box {
+      text-align: center;
+      h3 {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+
+    .doctor_box {
+      .doctor_info {
+        margin-bottom: 25px;
+
+        .doctor_social {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .core_features {
+    height: 100%;
+  }
+  .testimonials {
+    height: 100%;
+
+    .testimonials_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonials_slider_box {
+      width: 350px;
+    }
+    .testimonials_left_img {
+      padding: 10px;
+    }
+  }
+  .blog_main_box {
+    height: 100%;
+
+    .blog_main_title_box {
+      h3 {
+        font-size: 28px;
+        line-height: 45px;
+      }
+    }
+
+    .blog_card_main_box {
+      margin-top: 40px;
+      .blog_card_box {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .get_right_doctor_main {
+    height: 100%;
+    padding: 10px 0px;
+
+    .get_right_content button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+    .get_right_content h3 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .readyToapp_all_box {
+    padding: 20px;
+    .readyToapp_doctor_img {
+      justify-content: center;
+    }
+    .readyToapp_content_box {
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px 0px;
+
+      img {
+        margin-left: 0px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .image_box_main_section {
+    .img_box_img {
+      margin-bottom: 25px;
+    }
+  }
+
+  .footer_main {
+    &::after {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    .header__middle_box {
+      .header__pnumber_box {
+        justify-content: center;
+
+        img {
+          width: 30px;
+        }
+        .pnumber_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 13px;
+            line-height: 18px;
+          }
+          p {
+            line-height: 16px;
+            font-size: 13px;
+          }
+        }
+      }
+      .header__email_box {
+        justify-content: center;
+
+        img {
+          width: 30px;
+        }
+        .emailbox_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 13px;
+            line-height: 18px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+  .banar__main_box {
+    .banar__content_info {
+      h2 {
+        font-size: 70px;
+        line-height: 80px;
+      }
+
+      .banar__btn_box {
+        button {
+          width: 150px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .make__appoint_main_box {
+  }
+
+  .about__us_main_box {
+    .about__content_info {
+      padding: 25px;
+    }
+  }
+  .provideService_top_blank_box {
+    height: 200px;
+  }
+  .provide_service_main_box {
+    .provide_title_box {
+      h3 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .core_features {
+    .core_features_left_content {
+      h2 {
+        font-size: 32px;
+        line-height: 45px;
+      }
+    }
+    .core_features_img_box {
+      margin-bottom: 30px;
+    }
+  }
+  .testimonials_main_box {
+    overflow-x: hidden;
+    div {
+      padding: 0px;
+    }
+    .testimonials {
+      .testimonials_content {
+        padding: 30px 8px;
+        h2 {
+          text-align: center;
+        }
+      }
+      .testimonials_slider_box {
+        width: 285px;
+
+        .test_slider_content {
+          p {
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .readyToapp_main_box {
+    .readyToapp_all_box {
+      .readyToapp_content_box {
+        h3 {
+          margin-bottom: 20px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+
+  .blog_main_box {
+    .blog_main_title_box {
+      h3 {
+        font-size: 32px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .our_expert_doctor_main_box {
+    .our_expert_doctor_title_box {
+      h3 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .get_right_doctor_main {
+    .get_right_content {
+      width: 85%;
+      button {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .footer_main {
+    .footer_link_box {
+      padding-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .header {
+    .header__middle_box {
+      .header .header__top_box {
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .header__pnumber_box {
+        justify-content: center;
+
+        img {
+          width: 30px;
+        }
+        .pnumber_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          p {
+            line-height: 16px;
+            font-size: 11px;
+          }
+        }
+      }
+      .header__email_box {
+        justify-content: center;
+
+        img {
+          width: 30px;
+        }
+        .emailbox_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+
+    .mobile_header_menu_box {
+      .mobile_menu_popup {
+        .close_btn {
+          width: 28px;
+          height: 28px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .banar__main_box {
+    .banar__content_info {
+      .banar__btn_box button {
+        width: 130px;
+        font-size: 14px;
+      }
+    }
+  }
+  .make__appoint_box {
+    transform: translateY(-80px);
+  }
+  .about__us_main_box {
+    .about__content_info {
+      h2 {
+        font-size: 24px;
+      }
+    }
+    .about__img_box {
+      .about__img_top {
+        &::before {
+          width: 170px;
+          height: 170px;
+        }
+        &::after {
+          width: 80px;
+          height: 80px;
+          left: 40px;
+          top: 60px;
+        }
+      }
+    }
+  }
+
+  .provide_service_main_box {
+    .provide_title_box {
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+  .our_expert_doctor_main_box {
+    .our_expert_doctor_title_box {
+      h3 {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .core_features {
+    .core_features_left_content {
+      h2 {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+  }
+  .testimonials {
+    .testimonials_content {
+      h2 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .blog_main_box {
+    .blog_main_title_box {
+      h3 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    .header__top_box {
+      height: 45px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .header__middle_box {
+      .header__logo_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .header__pnumber_box {
+        justify-content: center;
+
+        img {
+          width: 35px;
+        }
+        .pnumber_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          p {
+            line-height: 18px;
+            font-size: 14px;
+          }
+        }
+      }
+      .header__email_box {
+        justify-content: center;
+
+        img {
+          width: 35px;
+        }
+        .emailbox_info {
+          padding-left: 5px;
+
+          h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+      .header__clock_box {
+        display: none;
+      }
+    }
+    // display: none;
+    .header__bottom_box {
+      .header__bottom {
+        display: none;
+      }
+    }
+    .mobile_header_menu_box {
+      display: block;
+      width: 90%;
+      margin: 0px auto;
+      height: 50px;
+      background-color: c.$primary_color;
+      z-index: 9999;
+      position: relative;
+
+      .mobile_menu_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 25px;
+
+        .humberger_menu_box {
+          span {
+            color: c.$third_color;
+            font-size: 20px;
+          }
+        }
+        .mobile_header__appoint_btn_box {
+          button {
+            padding: 10px;
+            font-size: 14px;
+            font-family: f.$nunito_font;
+            border: none;
+            outline: none;
+            background-color: c.$secondary_color;
+            color: c.$third_color;
+            border-radius: 20px;
+          }
+        }
+      }
+      .mobile_menu_popup {
+        width: 70%;
+        height: 100vh;
+        background-color: c.$secondary_color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999999;
+        display: block;
+        transition: all 0.5s;
+        transform: translateX(-110%);
+        &.active {
+          transform: translateX(0%);
+        }
+
+        .close_btn {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: c.$secondary_color;
+          background-color: c.$third_color;
+          font-size: 20px;
+          border-radius: 20px;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+
+        .mobile_menu_ul {
+          margin-top: 100px;
+
+          ul {
+            list-style-type: none;
+            li {
+              line-height: 40px;
+
+              a {
+                text-decoration: none;
+                color: c.$third_color;
+                border: none;
+                transition: border-width 0.5s ease-in-out;
+                &:hover {
+                  border-bottom: 1px solid c.$third_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonials_content .testimonials_slider_box {
+    margin-top: 30px;
+    width: 320px;
+    height: 320px;
+  }
+  .our_expert_doctor_main_box {
+    overflow-x: hidden;
+  }
+  .footer_main {
+    overflow-x: hidden;
+  }
+
+  .make__appoint_box {
+    padding: 40px 20px;
+    height: 100%;
+  }
+  .provideService_top_blank_box {
+    height: 210px;
+  }
+  .about__us_main_box {
+    height: 630px;
+    &::before {
+      z-index: -1;
+    }
+    .about__img_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      .about__img_top {
+        img {
+          width: 100%;
+        }
+      }
+      .about__img_bottom {
+        img {
+          width: 55%;
+        }
+      }
+    }
+
+    .about__content_info {
+      h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        z-index: 99;
+      }
+
+      .about__subservice_box {
+        .about_subservice {
+          img {
+            width: 40px;
+            margin-bottom: 10px;
+          }
+          h3 {
+            font-size: 17px;
+            line-height: 25px;
+          }
+
+          span {
+            font-size: 13px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+  .readyToapp_all_box {
+    .readyToapp_content_box {
+      img {
+        width: 70px;
+        margin-left: 15px;
+      }
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0px 30px;
+      }
+      button {
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .provide_service_main_box {
+    height: 1100px;
+    &::before {
+      z-index: -1;
+    }
+    .service_info_box {
+      .service_box {
+        height: 350px;
+        img {
+          width: 70px;
+          margin-bottom: 15px;
+        }
+        h3 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .our_expert_doctor_main_box {
+    height: 680px;
+    .doctor_box {
+      .doctor_info {
+        img {
+          width: 120px;
+          height: 120px;
+        }
+
+        h3 {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .doctor_schedule_main_box {
+    .doctor_schedule_title_box {
+      h3 {
+        font-size: 40px;
+        line-height: 55px;
+      }
+    }
+  }
+
+  .core_features {
+    .core_features_left_content {
+      h2 {
+        font-size: 30px;
+        line-height: 50px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 25px;
+      }
+    }
+    .core_features_img_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .testimonials .testimonials_content h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .blog_main_box .blog_card_main_box .blog_card_box .card_body h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer_main .footer_contact_info ul {
+    transform: translateX(0px);
+
+    li {
+      font-size: 14px;
+    }
+  }
+  .footer_main .footer_contact_info .subscribe_box input {
+    font-size: 12px;
+  }
+  .footer_main .footer_link_box .footer_ul_b ul li {
+    font-size: 13px;
+  }
+  .footer_main .footer_logo_box p {
+    font-size: 10px;
+    line-height: 22px;
+  }
+}

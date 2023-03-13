@@ -1,0 +1,61 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.image_box_main_section {
+  //   width: 100vw;
+  //   height: 100%;
+  margin-top: 30px;
+  overflow-x: hidden;
+
+  .img_box_img {
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .img_overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 35, 75, 0.7);
+      mix-blend-mode: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all 0.4s;
+      visibility: hidden;
+      opacity: 0;
+
+      h2 {
+        font-family: f.$heebo_font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 45px;
+        color: c.$third_color;
+      }
+      span {
+        font-family: f.$nunito_font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 22px;
+        color: c.$third_color;
+        margin-top: 15px;
+      }
+    }
+    &:hover {
+      .img_overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

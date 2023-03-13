@@ -1,0 +1,51 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.get_right_doctor_main {
+  width: 100%;
+  height: 100px;
+  background-color: c.$primary_color;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/get_right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .get_right_content {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3 {
+      font-family: f.$nunito_font;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: c.$third_color;
+    }
+    button {
+      border: 2px solid c.$third_color;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: transparent;
+      color: c.$third_color;
+
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+}
