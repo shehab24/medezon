@@ -33,6 +33,7 @@ $('.multiple_items').slick({
     ]
   });
 
+
 var show_btn = document.querySelector(".show_popup_menu");
 var close_btn = document.querySelector(".close_btn");
 

@@ -1,0 +1,258 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.service_details_main_box {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0px;
+
+  .popular_box {
+    width: 371px;
+    height: 435px;
+    background: rgba(73, 154, 250, 0.1);
+    padding: 40px;
+
+    h3 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: #00234b;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        line-height: 40px;
+
+        a {
+          font-family: f.$nunito_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 40px;
+          text-transform: capitalize;
+          color: #00234b;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .download_box {
+    margin-top: 30px;
+    height: 280px;
+    width: 371px;
+    background: rgba(73, 154, 250, 0.1);
+    padding: 40px;
+
+    h3 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: #00234b;
+      margin-bottom: 25px;
+    }
+
+    button {
+      width: 268px;
+      height: 50px;
+      margin: 10px 0px;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 145px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      color: c.$third_color;
+      border: none;
+      outline: none;
+      border-radius: 7px;
+
+      i {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0px 5px;
+      }
+    }
+    .btn_one_d {
+      background-color: c.$primary_color;
+    }
+    .btn_two_d {
+      background-color: c.$third_color;
+      color: c.$secondary_color;
+    }
+  }
+  .have_query {
+    width: 371px;
+    height: 430px;
+    margin-top: 30px;
+    background-image: url('../images/have_query_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('../images/have_query_overlay.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    h3 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: c.$third_color;
+      margin: 20px 0px;
+    }
+
+    span {
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      color: c.$third_color;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 161px;
+      height: 50px;
+      background: c.$primary_color;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 145px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      color: c.$third_color;
+      i {
+        margin: 0px 5px;
+      }
+    }
+  }
+  .service_details_content_area {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin: 25px 0px;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: c.$secondary_color;
+    }
+
+    p {
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: #4d6581;
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin: 25px 0px;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: c.$secondary_color;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        i {
+          font-size: 45px;
+          color: c.$primary_color;
+          margin-right: 15px;
+        }
+
+        span {
+          font-family: f.$nunito_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          color: #4d6581;
+        }
+      }
+    }
+  }
+}

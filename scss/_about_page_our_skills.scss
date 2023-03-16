@@ -1,0 +1,101 @@
+@use './color' as c;
+@use './typhography' as f;
+
+.our_skills_main_box {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0px;
+  position: relative;
+
+  .about__img_top {
+    position: relative;
+  }
+
+  .about__content_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: c.$primary_color;
+      border: none;
+      outline: none;
+      width: 135px;
+      height: 36px;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+    p {
+      width: 520px;
+      font-family: f.$nunito_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .progress_main_box {
+      width: 100%;
+      margin: 10px 0px 20px 0px;
+
+      .progress_title_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        h3,
+        h4 {
+          font-family: f.$heebo_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 34px;
+          color: c.$secondary_color;
+        }
+      }
+      .progress {
+        width: 100% !important;
+        height: 5px !important;
+
+        .progress-bar {
+          background: c.$primary_color !important;
+        }
+      }
+    }
+    .about__learn_btn {
+      width: 209px;
+      height: 50px;
+      border: 2px solid rgba(0, 35, 75, 0.1);
+      border-radius: 7px;
+      font-family: f.$heebo_font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 145px;
+      color: c.$third_color;
+      background-color: c.$secondary_color;
+      margin-top: 40px;
+
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+}
